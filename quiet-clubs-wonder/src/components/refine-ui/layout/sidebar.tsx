@@ -334,7 +334,7 @@ function SidebarButton({
     <>
       <ItemIcon icon={item.meta?.icon ?? item.icon} isSelected={isSelected} />
       <span
-        className={cn("tracking-[-0.00875rem]", {
+        className={cn("tracking-normal", {
           "flex-1": rightIcon,
           "text-left": rightIcon,
           "line-clamp-1": !rightIcon,
@@ -357,7 +357,7 @@ function SidebarButton({
       variant="ghost"
       size="lg"
       className={cn(
-        "flex w-full items-center justify-start gap-2 py-2 !px-3 text-sm",
+        "flex w-full items-center justify-start gap-3 py-2 !px-3 text-sm",
         {
           "bg-sidebar-primary": isSelected,
           "hover:!bg-sidebar-primary/90": isSelected,
