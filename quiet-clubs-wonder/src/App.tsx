@@ -71,6 +71,7 @@ function App() {
                 <Route path="/" element={<Layout>
                   <Outlet />
                 </Layout>}>
+                
                   <Route index element={<div className="p-8">
                     <h1 className="text-2xl font-bold">My Custom Dashboard</h1>
                     <p>This is my custom content, not the Refine welcome page.</p>
