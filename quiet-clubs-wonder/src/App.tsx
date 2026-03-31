@@ -35,8 +35,34 @@ function App() {
                   name: "dashboard",
                   list: "/dashboard",
                   meta: {
-                    label: "Home",
+                    label: "Dashboard",
                     icon: "home",
+                  },
+                },
+                {
+                  name: "management",
+                  meta: {
+                    label: "Management",
+                    icon: "settings",
+                    route: "management",
+                  },
+                },
+                {
+                  name: "users",
+                  list: "/users",
+                  meta: {
+                    label: "Users",
+                    icon: "users",
+                    parent: "management",
+                  },
+                },
+                {
+                  name: "posts",
+                  list: "/posts",
+                  meta: {
+                    label: "Posts",
+                    icon: "document",
+                    parent: "management",
                   },
                 },
               ]}
