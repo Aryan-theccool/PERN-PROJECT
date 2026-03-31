@@ -13,6 +13,8 @@ import { useNotificationProvider } from "./components/refine-ui/notification/use
 import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
 import { dataProvider } from "./providers/data";
 import { Layout } from "./components/refine-ui/layout/layout";
+import UserList from "./pages/users/list";
+import PostList from "./pages/posts/list";
 
 function App() {
   return (
@@ -80,6 +82,8 @@ function App() {
                     <h1 className="text-2xl font-bold">Dashboard</h1>
                     <p>This is the dashboard page.</p>
                   </div>} />
+                  <Route path="users" element={<UserList />} />
+                  <Route path="posts" element={<PostList />} />
                 </Route>
               </Routes>
               <Toaster />
